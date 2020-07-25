@@ -17,8 +17,6 @@ if(mat[target][i] == 1 && visited[i] == 0)
 return i;
 if(i == n)
 {
-if(visited[i] == 0)
-return -1;
 return target;
 }
 i=i+1;
@@ -36,7 +34,7 @@ cout<<" -> "<<stack[top];
 getval = adjacent(adj,n,0,stack[top]);
 if(getval == stack[top])
 top=top-1;
-if(top != -1 && getval != -1)
+if(top != -1)
 dfs(adj,getval,n);
 }
 int main()
