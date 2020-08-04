@@ -83,6 +83,7 @@ case 1:cout<<"1 Daily Account\n2 Monthly Account\n";
        obj[i].daily();
        if(accnt_type == 2)
        obj[i].monthly();
+       i++;
        }
        break;
 case 2:cout<<"Account Number\n";
@@ -99,7 +100,6 @@ case 2:cout<<"Account Number\n";
 	break;
 	default : break;
 }
-i++;
 }
 return 0;
 }
